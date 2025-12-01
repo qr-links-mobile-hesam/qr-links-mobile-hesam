@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ارتباط با موبایل حسام</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background: #f7f7f7;
+            padding: 30px;
+        }
+        .box {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 280px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        canvas {
+            margin-top: 10px;
+            width: 240px !important;
+            height: 240px !important;
+        }
+    </style>
+</head>
+<body>
+
+<h2>ارتباط سریع با موبایل حسام</h2>
+
+<div class="box">
+    <h3>تلگرام</h3>
+    <canvas id="tg"></canvas>
+</div>
+
+<div class="box">
+    <h3>واتس‌اپ</h3>
+    <canvas id="wa"></canvas>
+</div>
+
+<div class="box">
+    <h3>ایتا</h3>
+    <canvas id="eitaa"></canvas>
+</div>
+
+<div class="box">
+    <h3>ذخیره مخاطب</h3>
+    <canvas id="vcf"></canvas>
+</div>
+
+<script>
+    new QRious({
+        element: document.getElementById('tg'),
+        size: 500,
+        value: "https://t.me/ai_hesam"
+    });
+
+    new QRious({
+        element: document.getElementById('wa'),
+        size: 500,
+        value: "https://wa.me/989197664997"
+    });
+
+    new QRious({
+        element: document.getElementById('eitaa'),
+        size: 500,
+        value: "https://eitaa.com/mobile_hesam"
+    });
+
+    new QRious({
+        element: document.getElementById('vcf'),
+        size: 500,
+        value: "https://raw.githubusercontent.com/USERNAME/qr-links-mobile-hesam/main/mobile-hesam.vcf"
+    });
+</script>
+
+</body>
+</html>
